@@ -1,8 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#262626"/>
-  <circle cx="256" cy="256" r="64" fill="#ffffff"/>
-  <circle cx="256" cy="128" r="36" fill="#ffffff"/>
-  <circle cx="256" cy="384" r="36" fill="#ffffff"/>
-  <circle cx="128" cy="256" r="36" fill="#ffffff"/>
-  <circle cx="384" cy="256" r="36" fill="#ffffff"/>
+  <defs>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#888888" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <g filter="url(#soft)">
+    <line x1="164" y1="256" x2="192" y2="256" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="256" cy="256" r="64" fill="#ffffff"/>
+    <circle cx="256" cy="128" r="36" fill="#ffffff"/>
+    <circle cx="256" cy="384" r="36" fill="#ffffff"/>
+    <circle cx="128" cy="256" r="30" fill="none" stroke="#ffffff" stroke-width="12"/>
+    <circle cx="384" cy="256" r="36" fill="#a9d6f5"/>
+  </g>
 </svg>
